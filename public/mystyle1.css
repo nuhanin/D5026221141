@@ -1,0 +1,15 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pembuka{
+    font-size: medium;
+    float: left;
+    width: 33.33%;
+    border-style:solid;
+}
+
+.isiberita{
+    width: 33.33%;
+    border-style: inherit;
+}

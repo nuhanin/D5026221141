@@ -1,0 +1,21 @@
+h3 {
+    color:black;
+    text-decoration:solid;
+}
+p{
+    color: brown;
+    text-align: justify;
+}
+body{
+    background-color:rgb(127, 219, 255);
+}
+.ratakanan{
+    text-align: right;
+    color: rgb(203, 252, 172);
+    font-weight: bold;
+    font-size: medium;
+}
+.meow{
+    border-style: groove;
+    border-color: rgb(121, 19, 193);
+}
