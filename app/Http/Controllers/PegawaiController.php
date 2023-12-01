@@ -88,4 +88,8 @@ class PegawaiController extends Controller
 		return view('index1',['pegawai' => $pegawai]);
 
 	}
+    public function view($id){
+        $pegawai = DB::table('pegawai')->where('pegawai_id',$id)->get();
+        return view('view',['pegawai' => $pegawai]);
+    }
 }
