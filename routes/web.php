@@ -90,6 +90,17 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
+//route nilaiKuliah
+Route::get('/nilai','App\Http\Controllers\NilaiController@nilaiKuliah');
+Route::get('/nilai/tambahnilai','App\Http\Controllers\NilaiController@tambah');
+Route::post('/nilai/store','App\Http\Controllers\NilaiController@store');
+Route::get('/nilai/viewnilai/{id}','App\Http\Controllers\NilaiController@view');
+
 // route bus
 Route::get('/bus','App\Http\Controllers\BusController@bus');
+Route::get('/bus/tambahBus','App\Http\Controllers\BusController@tambah');
 Route::post('/bus/store','App\Http\Controllers\BusController@store');
+Route::get('/bus/viewBus/{id}','App\Http\Controllers\BusController@view');
+Route::get('/bus/editBus/{id}','App\Http\Controllers\BusController@edit');
+Route::post('/bus/update','App\Http\Controllers\BusController@update');
+Route::get('/bus/hapus/{id}','App\Http\Controllers\BusController@hapus');

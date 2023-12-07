@@ -1,37 +1,37 @@
 @extends('master3')
 @section('title', 'Database Bus')
+
 @section('page_title')
-    <h3>Data Persediaan Bus</h3>
+<h3>Data Bus</h3>
 
-    {{-- <a href="/pegawai/tambah"> + Tambah Bus Baru</a> --}}
+<a href="/bus/tambahBus"> + Tambah Bus</a>
 
-    <br />
-    <br />
+<br/>
+<br/>
 @endsection
-@section('konten')
-<table class="table table-striped table-hover">
+
+@section('content')
+<table class="table table-stripped table-hover">
     <tr>
-        <th>Kode</th>
-        <th>Merk</th>
-        <th>Jumlah</th>
+        <th>Merk Bus</th>
+        <th>Jumlah Bus</th>
         <th>Tersedia</th>
         <th>Opsi</th>
     </tr>
     @foreach ($bus as $b)
-        <tr>
-            <td>{{ $b->bus_kode }}</td>
-            <td>{{ $b->bus_merk }}</td>
-            <td>{{ $b->bus_jumlah }}</td>
-            <td>{{ $b->bus_tersedia }}</td>
-            {{-- <td>
-                <a href="/bus/view/{{ $b->bus_id }}" class="btn btn-success">View</a>
-                |
-                <a href="/bus/edit/{{ $b->bus_id }}" class="btn btn-warning">Edit</a>
-                |
-                <a href="/bus/hapus/{{ $b->bus_id }}" class="btn btn-danger">Hapus</a>
-            </td> --}}
-        </tr>
+    <tr>
+        <td>{{ $b->merkbus }}</td>
+        <td>{{ $b->jumlahbus }}</td>
+        <td>{{ $b->tersedia }}</td>
+        <td>
+            <a href="/bus/viewBus/{{ $b->kodebus }}" class="btn btn-success">View</a>
+            |
+            <a href="/bus/editBus/{{ $b->kodebus }}" class="btn btn-warning">Edit</a>
+            |
+            <a href="/bus/hapus/{{ $b->kodebus }}" class="btn btn-danger">Hapus</a>
+        </td>
+    </tr>
     @endforeach
 </table>
-{{-- {{ $pegawai->links() }} --}}
+{{-- {{$bus->links}} --}}
 @endsection

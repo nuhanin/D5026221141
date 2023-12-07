@@ -32,7 +32,7 @@
                         Database
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="/pegawai">Pegawai</a>
+                        <a class="dropdown-item" href="/bus">Bus</a>
                         <a class="dropdown-item" href="#">Link 2</a>
                         <a class="dropdown-item" href="#">Link 3</a>
                     </div>
@@ -48,7 +48,7 @@
 
 
         <!-- bagian konten blog -->
-        @yield('konten')
+        @yield('content')
 
         <br />
         <br />
