@@ -37,9 +37,12 @@
                             </div>
                         </div>
 
-
-
-                        <a href="/nilai" class="row mb-3 btn btn-primary justify-center">OK</a>
+                        <div class="row mb-3">
+                            <div class="col-10 text-center">
+                                <a href="/nilai" class="btn btn-primary w-25 p-1">OK</a>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
                     </div>
                 </div>
             @endforeach
