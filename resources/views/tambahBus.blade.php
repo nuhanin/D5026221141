@@ -25,8 +25,13 @@
 		 <div class = "form-group row">
             <label for = "tersedia" class = "col-sm-2 control-label">Tersedia</label>
             <div class = "col-sm-8">
-               <input name="tersedia" type="text" maxlength="1" class = "form-control" id = "tersedia" placeholder = "Masukkan ketersediaan bus">
+               {{-- <input name="tersedia" type="text" maxlength="1" class = "form-control" id = "tersedia" placeholder = "Masukkan ketersediaan bus"> --}}
+               <select class="form-select" id="tersedia" name="tersedia">
+                <option value="1">Y</option>
+                <option value="0">N</option>
+            </select>
             </div>
+
          </div>
 		<input type="submit" value="Simpan Data" class="btn btn-primary">
 	</form>

@@ -104,3 +104,9 @@ Route::get('/bus/viewBus/{id}','App\Http\Controllers\BusController@view');
 Route::get('/bus/editBus/{id}','App\Http\Controllers\BusController@edit');
 Route::post('/bus/update','App\Http\Controllers\BusController@update');
 Route::get('/bus/hapus/{id}','App\Http\Controllers\BusController@hapus');
+
+//route karyawan
+Route::get('/karyawan','App\Http\Controllers\KaryawanController@indexkaryawan');
+Route::get('/karyawan/tambah','App\Http\Controllers\KaryawanController@tambah');
+Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/hapus/{id}','App\Http\Controllers\KaryawanController@hapus');
